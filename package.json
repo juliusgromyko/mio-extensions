@@ -1,0 +1,21 @@
+{
+  "name": "mio-extensions",
+  "version": "1.0.0",
+  "description": "Extract requested file type",
+  "main": "extensions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MIO",
+    "hight",
+    "load",
+    "node",
+    "npm"
+  ],
+  "author": "Julius Gromyko <JuliusGromyko@gmail.com> (http://gromy.co)",
+  "license": "MIT",
+  "dependencies": {
+    "object-to-xml": "1.1.0"
+  }
+}
