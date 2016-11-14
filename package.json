@@ -1,8 +1,12 @@
 {
   "name": "mio-extensions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extract requested file type",
   "homepage": "http://gromy.co",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Gromyco/mio-extensions"
+  },
   "main": "extensions.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
