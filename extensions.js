@@ -20,12 +20,16 @@ function extract(req, res, next){
 
 // Response render
 function render(req, res, options){
+  console.log("!");
+  
   // Return 501 error for unknown path
   if(!options){
     res.status(501);
     res.send('501 Not Implemented');
     return;
   }
+
+  console.log(options);
 
   // Set status code
   if(options.status){
