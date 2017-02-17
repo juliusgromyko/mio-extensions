@@ -12,8 +12,11 @@ function extract(req, res, next){
   var urlExtension = req.query.format;
   var headerExtensions = req.headers.format;
   var acceptsExtensions = req.accepts(['html', 'json', 'xml']);
-  var contentType = req.headers['content-type'].split('/');
-  contentType = contentType[contentType.length-1];
+  var contentType = req.headers['content-type'];
+  if(contentType){
+    contentType = contentType.split('/');
+    contentType = contentType[contentType.length-1];
+  }
   var extension = pathExtension || urlExtension || contentType || headerExtensions || acceptsExtensions;
 
   req.extension = extension;
